@@ -20,3 +20,5 @@ BEGIN
           
 END  
 GO  
+
+-- SE NECESITAN CONSULTAS CON LIKE....
