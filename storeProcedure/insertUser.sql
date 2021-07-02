@@ -1,6 +1,6 @@
 --INSERTAR USUARIO
-CREATE PROCEDURE useruc 
---ALTER PROCEDURE useruc --EDITAR PROCEDIMIENTO ALMACENADO
+CREATE PROCEDURE insertUseruc 
+--ALTER PROCEDURE insertUseruc --EDITAR PROCEDIMIENTO ALMACENADO
     @username VARCHAR(50),
     @password VARCHAR(32)
 	 
@@ -12,8 +12,8 @@ BEGIN
     SET @usuario_id = SCOPE_IDENTITY()
     
     SELECT 
-        usuario_id = @usuario_id,
-        username = @username
-    FROM Usuario 
-    WHERE  usuario_id = @usuario_id
+        useruc_id = @usuario_id,
+        user_name = @username
+    FROM useruc 
+    WHERE  useruc_id = @usuario_id
 END
