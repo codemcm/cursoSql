@@ -22,3 +22,11 @@ END
 GO  
 
 -- SE NECESITAN CONSULTAS CON LIKE....
+
+/*
+CALL STORE PROCEDURE
+*/
+
+EXEC sp_procoption @ProcName = '<procedure name>'   
+    , @OptionName = 'startup'   
+    , @OptionValue = 'on';  
