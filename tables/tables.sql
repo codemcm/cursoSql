@@ -1,3 +1,8 @@
+/*
+* Database name: cloverbd
+* Created by: Martin Cruz
+* Created date: july 2021
+*/
 --DROP TABLE useruc
 CREATE TABLE useruc(
     useruc_id INT IDENTITY(1,1) PRIMARY KEY,
@@ -52,7 +57,7 @@ CREATE TABLE ticket(
 );
 --DROP TABLE prize
 CREATE TABLE prize(
-    prize_id INT,
+    prize_id INT IDENTITY(1,1) PRIMARY KEY,
     raffle_id INT,
     product VARCHAR(100),
     active BIT DEFAULT 1,
